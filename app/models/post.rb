@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   
   
   #rcall method before_save to call capitilize title method
-  before_save :make_title_case 
+  before_validation :make_title_case 
 
   private
 
